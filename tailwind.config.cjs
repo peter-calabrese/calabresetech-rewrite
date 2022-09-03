@@ -14,6 +14,7 @@ module.exports = {
         "file-text": "#CCCCCC",
         "html-logo": "#E44D27",
         "css-logo": "#214CE5",
+        "JSON-logo": "#F5DE19",
       },
     },
   },
