@@ -1,19 +1,24 @@
-import FileList from './components/FileList';
-import TopBar from './components/TopBar';
-import SideBar from './components/SideBar';
+import FileList from './components/VSCComponents/FileList';
+import TopBar from './components/VSCComponents/TopBar';
+import SideBar from './components/VSCComponents/SideBar';
 import WebpageRenderer from './components/WebpageRenderer';
-
-import { useState } from 'react';
+import TabBar from './components/VSCComponents/TabBar';
+import { useEffect, useState } from 'react';
 function App() {
-  const [renderPage, setRenderPage] = useState('Home');
-
+  const [renderPage, setRenderPage] = useState('Homepage.jsx');
+  useEffect(() => {
+    document.title = renderPage + ' - calabrese.tech'
+  }, [renderPage])
   return (
-    <div>
-      <TopBar />
+    <div className=''>
+      <TopBar file={renderPage} />
+
       <div className='flex'>
         <SideBar />
         <FileList setFileToRender={setRenderPage} />
+
         <div className='h-screen bg-text-editor-bg w-full'>
+          <TabBar />
           <WebpageRenderer value={renderPage} />
         </div>
       </div>

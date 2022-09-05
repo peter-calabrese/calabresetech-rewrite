@@ -5,15 +5,13 @@ import Projects from "./Webpages/Projects";
 const WebpageRenderer = ({ value }) => {
     const renderSwitch = (value) => {
         switch (value) {
-            case 'Home':
+            case 'Homepage.jsx':
                 return <Homepage />
-
-
-            case 'About':
+            case 'About.html':
                 return <About />
-            case 'Contact':
+            case 'Contact.css':
                 return <Contact />
-            case 'Projects':
+            case 'Projects.json':
                 return <Projects />
             default:
                 break;
