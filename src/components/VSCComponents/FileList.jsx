@@ -20,13 +20,13 @@ const FileList = ({ setFileToRender }) => {
             {/* Directories */}
             <div className="pl-2">
                 {/* Homepage */}
-                <DirectoryFile icon={<SiReact className='text-react-logo mr-2' size={12} />} filename={"Homepage.jsx"} onClick={() => fileClicked('Home')} />
+                <DirectoryFile icon={<SiReact className='text-react-logo mr-2' size={12} />} filename={"Homepage.jsx"} onClick={() => fileClicked('Homepage.jsx')} />
                 {/* About */}
-                <DirectoryFile icon={<SiHtml5 className='text-html-logo mr-2' size={12} />} filename={"About.html"} onClick={() => fileClicked('About')} />
+                <DirectoryFile icon={<SiHtml5 className='text-html-logo mr-2' size={12} />} filename={"About.html"} onClick={() => fileClicked('About.html')} />
                 {/* Contact */}
-                <DirectoryFile icon={<SiCss3 className='text-css-logo mr-2' size={12} />} filename={"Contact.css"} onClick={() => fileClicked('Contact')} />
+                <DirectoryFile icon={<SiCss3 className='text-css-logo mr-2' size={12} />} filename={"Contact.css"} onClick={() => fileClicked('Contact.css')} />
                 {/* Projects */}
-                <DirectoryFile icon={<VscJson className='text-JSON-logo mr-2' size={12} />} filename={"Projects.json"} onClick={() => fileClicked('Projects')} />
+                <DirectoryFile icon={<VscJson className='text-JSON-logo mr-2' size={12} />} filename={"Projects.json"} onClick={() => fileClicked('Projects.json')} />
 
             </div>
         </div>
