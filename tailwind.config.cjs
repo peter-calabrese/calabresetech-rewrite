@@ -18,7 +18,9 @@ module.exports = {
         "text-editor-bg": "#1E1E1E",
         "tab-bg": "#252526",
         "tab-open-unfocused": "#2C2C2C",
-        
+        "tab-open-focused": "#1E1E1E",
+        "tab-text-unfocused": "#CCCCCC",
+        "tab-text-focused": "#FFFFFF",
       },
     },
   },
