@@ -21,6 +21,7 @@ module.exports = {
         "tab-open-focused": "#1E1E1E",
         "tab-text-unfocused": "#CCCCCC",
         "tab-text-focused": "#FFFFFF",
+        "file-selected": "#37373C",
       },
     },
   },
