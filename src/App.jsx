@@ -15,10 +15,10 @@ function App() {
 
       <div className='flex'>
         <SideBar />
-        <FileList setFileToRender={setRenderPage} />
+        <FileList value={renderPage} setFileToRender={setRenderPage} />
 
         <div className='h-screen bg-text-editor-bg w-full'>
-          <TabBar />
+          <TabBar value={renderPage} setTabToOpen={setRenderPage} />
           <WebpageRenderer value={renderPage} />
         </div>
       </div>
