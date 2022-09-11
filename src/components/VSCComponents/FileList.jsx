@@ -53,25 +53,25 @@ const FileList = ({ value, setFileToRender }) => {
                 <h2 className='ml-1 text-xs font-bold'>CALABRESE.TECH</h2>
             </div>
             {/* Directories */}
-            <div className="">
+            <div >
                 {/* Homepage */}
-                <button className={`pl-2 w-full flex justify-start items-center mt-1 hover:bg-slate-200 hover:bg-opacity-10 ${homepageFocus ? 'bg-file-selected text-tab-text-focused' : ''}`} onClick={() => fileClicked('Homepage.jsx')}>
+                <button className={`pl-2 py-1 w-full flex justify-start items-center hover:bg-slate-200 hover:bg-opacity-10 ${homepageFocus ? 'bg-file-selected text-tab-text-focused' : ''}`} onClick={() => fileClicked('Homepage.jsx')}>
                     <SiReact className='text-react-logo mr-2' size={12} />
                     <p className='text-file-text text-sm'>Homepage.jsx</p>
                 </button>
 
                 {/* About */}
-                <button className={`pl-2 w-full flex justify-start items-center mt-1 hover:bg-slate-200 hover:bg-opacity-10 ${aboutFocus ? 'bg-file-selected text-tab-text-focused' : ''}`} onClick={() => fileClicked('About.html')}>
+                <button className={`pl-2 w-full flex justify-start items-center py-1 hover:bg-slate-200 hover:bg-opacity-10 ${aboutFocus ? 'bg-file-selected text-tab-text-focused' : ''}`} onClick={() => fileClicked('About.html')}>
                     <SiHtml5 className='text-html-logo mr-2' size={12} />
                     <p className='text-file-text text-sm'>About.html</p>
                 </button>
                 {/* Contact */}
-                <button className={`pl-2 w-full flex justify-start items-center mt-1 hover:bg-slate-200 hover:bg-opacity-10 ${contactFocus ? 'bg-file-selected text-tab-text-focused' : ''}`} onClick={() => fileClicked('Contact.css')}>
+                <button className={`pl-2 w-full flex justify-start items-center py-1 hover:bg-slate-200 hover:bg-opacity-10 ${contactFocus ? 'bg-file-selected text-tab-text-focused' : ''}`} onClick={() => fileClicked('Contact.css')}>
                     <SiCss3 className='text-css-logo mr-2' size={12} />
                     <p className='text-file-text text-sm'>Contact.css</p>
                 </button>
                 {/* Projects */}
-                <button className={`pl-2 w-full flex justify-start items-center mt-1 hover:bg-slate-200 hover:bg-opacity-10 ${projectsFocus ? 'bg-file-selected text-tab-text-focused' : ''}`} onClick={() => fileClicked('Projects.json')}>
+                <button className={`pl-2 w-full flex justify-start items-center py-1 hover:bg-slate-200 hover:bg-opacity-10 ${projectsFocus ? 'bg-file-selected text-tab-text-focused' : ''}`} onClick={() => fileClicked('Projects.json')}>
                     <VscJson className='text-JSON-logo mr-2' size={12} />
                     <p className='text-file-text text-sm'>Projects.json</p>
                 </button>
