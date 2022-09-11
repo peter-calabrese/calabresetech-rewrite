@@ -2,11 +2,11 @@ import Homepage from "./Webpages/Homepage";
 import About from "./Webpages/About";
 import Contact from "./Webpages/Contact";
 import Projects from "./Webpages/Projects";
-const WebpageRenderer = ({ value }) => {
+const WebpageRenderer = ({ value, setRedirect }) => {
     const renderSwitch = (value) => {
         switch (value) {
             case 'Homepage.jsx':
-                return <Homepage />
+                return <Homepage setRedirect={setRedirect} />
             case 'About.html':
                 return <About />
             case 'Contact.css':
