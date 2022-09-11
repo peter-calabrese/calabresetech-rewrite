@@ -19,7 +19,7 @@ function App() {
 
         <div className='h-screen bg-text-editor-bg w-full'>
           <TabBar value={renderPage} setTabToOpen={setRenderPage} />
-          <WebpageRenderer value={renderPage} />
+          <WebpageRenderer value={renderPage} setRedirect={setRenderPage}/>
         </div>
       </div>
 
