@@ -5,7 +5,9 @@ import WebpageRenderer from './components/WebpageRenderer';
 import TabBar from './components/VSCComponents/TabBar';
 import { useEffect, useState } from 'react';
 function App() {
-  const [renderPage, setRenderPage] = useState('Homepage.jsx');
+  //TODO: Change render to Homepage.jsx post testing.
+  const [renderPage, setRenderPage] = useState('About.html');
+
   useEffect(() => {
     document.title = renderPage + ' - calabrese.tech'
   }, [renderPage])
@@ -19,7 +21,7 @@ function App() {
 
         <div className='h-screen bg-text-editor-bg w-full'>
           <TabBar value={renderPage} setTabToOpen={setRenderPage} />
-          <WebpageRenderer value={renderPage} setRedirect={setRenderPage}/>
+          <WebpageRenderer value={renderPage} setRedirect={setRenderPage} />
         </div>
       </div>
 
