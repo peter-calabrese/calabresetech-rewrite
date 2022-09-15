@@ -56,7 +56,7 @@ function Word({ children, ...props }) {
     }, [hovered])
     useFrame(({ camera }) => {
         wordRef.current.quaternion.copy(camera.quaternion)
-        wordRef.current.material.color.lerp(color.set(hovered ? '#fa2720' : 'white'), 0.1)
+        wordRef.current.material.color.lerp(color.set(hovered ? '#61DBFB' : 'white'), 0.1)
 
     })
     return <Text ref={wordRef} onPointerOver={hoverOver} onPointerOut={hoverOut} {...props} {...fontProps} children={children} />
