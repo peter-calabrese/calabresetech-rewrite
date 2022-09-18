@@ -33,8 +33,8 @@ function getSkill() {
         'Git',
         'GitHub',
         'DevOps',
-        'DevSecOps',
-        'Agile']
+        'Agile',
+        'DevSecOps']
 
 
     return skills[num++ % skills.length]
@@ -51,8 +51,7 @@ function Word({ children, ...props }) {
     const hoverOut = () => setHovered(false)
 
     useEffect(() => {
-        if (hovered) document.body.style.cursor = 'pointer'
-        return () => (document.body.style.cursor = 'auto')
+        hovered ? document.body.style.cursor = 'pointer' : (document.body.style.cursor = 'auto')
     }, [hovered])
     useFrame(({ camera }) => {
         wordRef.current.quaternion.copy(camera.quaternion)
