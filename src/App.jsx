@@ -6,7 +6,7 @@ import TabBar from './components/VSCComponents/TabBar';
 import { useEffect, useState } from 'react';
 function App() {
   //TODO: Change render to Homepage.jsx post testing.
-  const [renderPage, setRenderPage] = useState('About.html');
+  const [renderPage, setRenderPage] = useState('Contact.css');
 
   useEffect(() => {
     document.title = renderPage + ' - calabrese.tech'
