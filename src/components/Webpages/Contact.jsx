@@ -16,8 +16,8 @@ const Contact = () => {
     return (
 
         <form className="flex justify-center items-center flex-col h-screen" onSubmit={(event) => onSubmitHandle(event)}>
-            <div className='bg-Sunset-Orange px-56 py-24 rounded-xl flex'>
-                <div className='flex flex-col justify-center items-center'>
+            <div className='bg-Sunset-Orange px-20 py-24 rounded-xl flex'>
+                <div className='flex flex-col justify-center items-center pr-48'>
                     <p>Email</p>
                     <p>Email</p>
                     <p>Email</p>
