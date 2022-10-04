@@ -23,6 +23,9 @@ module.exports = {
         "tab-text-focused": "#FFFFFF",
         "file-selected": "#37373C",
       },
+      screens: {
+        "2560p": "2560px",
+      },
     },
   },
   plugins: [],
