@@ -16,7 +16,7 @@ const Contact = () => {
     async function onSubmitHandle(e) {
         e.preventDefault();
         console.log(e)
-        let res = await fetch("http://192.168.50.108:8080/email", {
+        let res = await fetch("https://192.168.50.108:8080/email", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
