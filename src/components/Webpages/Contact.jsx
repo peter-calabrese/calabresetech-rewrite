@@ -13,21 +13,25 @@ const Contact = () => {
         subject: "",
         message: ""
     })
-    // async function onSubmitHandle(e) {
-    //     e.preventDefault();
-    //     let res = await fetch("http://192.168.50.108:3001/email", {
-    //         method: "POST",
-    //         body: JSON.stringify({
-    //             fName: contactInfo.fName,
-    //             lName: contactInfo.lName,
-    //             email: contactInfo.email,
-    //             phoneNumber: contactInfo.phoneNumber,
-    //             subject: contactInfo.subject,
-    //             message: contactInfo.message
-    //         }),
-    //     });
-    //     console.log(res)
-    // }
+    async function onSubmitHandle(e) {
+        e.preventDefault();
+        console.log(e)
+        let res = await fetch("http://192.168.50.108:8080/email", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(
+                {
+                    name: `${contactInfo.fName} ${contactInfo.lName}`,
+                    email: contactInfo.email,
+                    phoneNumber: contactInfo.phoneNumber,
+                    subject: contactInfo.subject,
+                    message: contactInfo.message
+                }),
+        });
+        console.log(res.json());
+    }
     const iconSize = '25px';
     return (
 
